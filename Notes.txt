@@ -1,0 +1,67 @@
+1) Difference between RDD, DataFrame & Dataset?
+
+        RDD Features:
+        1) Distributed collection
+        2) Immutable
+        3) Fault tolerant
+        4) Lazy evaluations
+        5) Functional transformations Transformations and Actions
+        6) Data processing formats structured as well as unstructured data
+        7) Programming Languages supported Java, Scala, Python and R.
+
+
+        DataFrame Features:
+        1) Distributed collection of Row Object
+        2) Data Processing
+        3) Optimization using catalyst optimizer
+        4) Hive Compatibility
+        5) Tungsten
+        6) Programming Languages supported Java, Scala, Python and R.
+
+        DataSet Features:
+        1) Provides best of both RDD and Dataframe
+        2) Encoders
+        3) Programming Languages supported Java, Scala
+        4) Type Safety
+        
+        
+2) Configurations:
+   
+        a) Spark Session:
+
+                 spark = SparkSession \
+                         .builder \
+                         .master['local']
+                         .appName('Practice 1 ') \
+                         .config('spark.driver.memorey', '40g') \
+                         .getOrCreate()
+
+                  spark
+
+
+        b) Spark Context:
+
+                conf1 = pyspark.SparkConf().setMaster('local').setAppName('practice 1')
+
+                sc = SparkContext (conf=conf1)
+
+                sc
+
+
+        b) SQL Context:
+
+                conf1 = pyspark.SparkConf().setMaster('local').setAppName('practice 1')
+
+                sc = SparkContext (conf=conf1)
+
+                sqlC = SQLContext(sc)
+
+                sqlC
+
+
+
+
+
+
+PySpark Documentation : 
+https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql/index.html

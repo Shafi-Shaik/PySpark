@@ -15,4 +15,11 @@ Below Topics will be covered in this Repo
    * Different Ways of creating DataFrames
      * on the fly
      * from existing RDDs
-     * External Files (Importing)
+     * External Files (Importing
+  
+  
+  
+<br> <br> <hr>
+#### <center> Content in Notebooks:
+ * 6.1 DF methods.ipynb 
+     * show(), select(), collect()
